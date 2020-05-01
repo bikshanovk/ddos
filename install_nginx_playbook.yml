@@ -1,0 +1,12 @@
+---
+- name: deploy nginx
+  hosts: all
+  user: ec2-user
+  tasks:
+  - name: install nginx
+    yum: 
+      name=nginx
+  - name: enable service
+    service: name=nginx enabled=true
+  become: true
+...
