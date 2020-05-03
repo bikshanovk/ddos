@@ -1,0 +1,5 @@
+[localfacts]
+name = smbd
+package = samba
+service = smb
+state = enabled
